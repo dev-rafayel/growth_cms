@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_landing_page_category_grids",
+  "info": {
+    "displayName": "Category Grid"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "limit": {
+      "type": "integer",
+      "default": 6
+    },
+    "linkText": {
+      "type": "string"
+    },
+    "linkUrl": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
