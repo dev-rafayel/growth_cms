@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_landing_page_heroes",
+  "info": {
+    "displayName": "Hero"
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "buttonText": {
+      "type": "string"
+    }
+  }
+}
