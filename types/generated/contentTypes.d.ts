@@ -638,6 +638,7 @@ export interface ApiLandingPageLandingPage extends Struct.CollectionTypeSchema {
         'landing-page.faq',
       ]
     >;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
     slug: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;
     title: Schema.Attribute.String & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
