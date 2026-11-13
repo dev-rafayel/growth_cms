@@ -6,11 +6,11 @@
   "options": {},
   "attributes": {
     "question": {
-      "type": "text",
+      "type": "string",
       "required": true
     },
     "answer": {
-      "type": "string",
+      "type": "text",
       "required": true
     }
   },

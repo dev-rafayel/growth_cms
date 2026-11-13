@@ -28,12 +28,14 @@
         "landing-page.category-grid",
         "landing-page.cta-band",
         "landing-page.faq"
-      ]
+      ],
+      "min": 1
     },
     "seo": {
       "type": "component",
       "component": "shared.seo",
-      "repeatable": false
+      "repeatable": false,
+      "required": true
     }
   }
 }
