@@ -12,7 +12,8 @@
     "items": {
       "type": "component",
       "component": "landing-page.faq-item",
-      "repeatable": true
+      "repeatable": true,
+      "min": 1
     }
   },
   "config": {}

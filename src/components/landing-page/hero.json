@@ -12,10 +12,12 @@
       "type": "text"
     },
     "buttonText": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "buttonUrl": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "background": {
       "type": "media",

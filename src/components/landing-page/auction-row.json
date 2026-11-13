@@ -11,6 +11,7 @@
     },
     "source": {
       "type": "enumeration",
+      "required": true,
       "enum": [
         "ending_soon",
         "newest"
