@@ -19,10 +19,16 @@
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": ["images", "files", "videos"]
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
     },
     "email": {
-      "type": "string"
+      "type": "string",
+      "private": true,
+      "searchable": false
     },
     "articles": {
       "type": "relation",
