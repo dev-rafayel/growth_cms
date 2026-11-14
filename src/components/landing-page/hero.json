@@ -17,7 +17,8 @@
     },
     "buttonUrl": {
       "type": "string",
-      "required": true
+      "required": true,
+      "regex": "^(\\/|https?:\\/\\/)\\S*$"
     },
     "background": {
       "type": "media",

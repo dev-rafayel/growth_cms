@@ -17,7 +17,8 @@
       "type": "string"
     },
     "linkUrl": {
-      "type": "string"
+      "type": "string",
+      "regex": "^(\\/|https?:\\/\\/)\\S*$"
     }
   },
   "config": {}
