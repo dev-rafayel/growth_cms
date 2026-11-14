@@ -1,12 +1,76 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface LandingPageAuctionRow extends Struct.ComponentSchema {
+  collectionName: 'components_landing_page_auction_rows';
+  info: {
+    displayName: 'Auction Row';
+  };
+  attributes: {
+    limit: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<8>;
+    linkText: Schema.Attribute.String;
+    linkUrl: Schema.Attribute.String;
+    source: Schema.Attribute.Enumeration<['ending_soon', 'newest']>;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
+export interface LandingPageCategoryGrid extends Struct.ComponentSchema {
+  collectionName: 'components_landing_page_category_grids';
+  info: {
+    displayName: 'Category Grid';
+  };
+  attributes: {
+    limit: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<6>;
+    linkText: Schema.Attribute.String;
+    linkUrl: Schema.Attribute.String;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
+export interface LandingPageCtaBand extends Struct.ComponentSchema {
+  collectionName: 'components_landing_page_cta_bands';
+  info: {
+    displayName: 'Cta Band';
+  };
+  attributes: {
+    buttonText: Schema.Attribute.String;
+    buttonUrl: Schema.Attribute.String;
+    description: Schema.Attribute.Text;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
+export interface LandingPageFaq extends Struct.ComponentSchema {
+  collectionName: 'components_landing_page_faqs';
+  info: {
+    displayName: 'Faq';
+  };
+  attributes: {
+    items: Schema.Attribute.Component<'landing-page.faq-item', true>;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
+export interface LandingPageFaqItem extends Struct.ComponentSchema {
+  collectionName: 'components_landing_page_faq_items';
+  info: {
+    displayName: 'Faq item';
+  };
+  attributes: {
+    answer: Schema.Attribute.String & Schema.Attribute.Required;
+    question: Schema.Attribute.Text & Schema.Attribute.Required;
+  };
+}
+
 export interface LandingPageHero extends Struct.ComponentSchema {
   collectionName: 'components_landing_page_heroes';
   info: {
     displayName: 'Hero';
   };
   attributes: {
+    background: Schema.Attribute.Media<'images'>;
     buttonText: Schema.Attribute.String;
+    buttonUrl: Schema.Attribute.String;
     description: Schema.Attribute.Text;
     title: Schema.Attribute.String & Schema.Attribute.Required;
   };
@@ -77,6 +141,11 @@ export interface SharedSlider extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export namespace Public {
     export interface ComponentSchemas {
+      'landing-page.auction-row': LandingPageAuctionRow;
+      'landing-page.category-grid': LandingPageCategoryGrid;
+      'landing-page.cta-band': LandingPageCtaBand;
+      'landing-page.faq': LandingPageFaq;
+      'landing-page.faq-item': LandingPageFaqItem;
       'landing-page.hero': LandingPageHero;
       'shared.media': SharedMedia;
       'shared.quote': SharedQuote;

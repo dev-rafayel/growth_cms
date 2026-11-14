@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_landing_page_auction_rows",
+  "info": {
+    "displayName": "Auction Row"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "source": {
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "ending_soon",
+        "newest"
+      ]
+    },
+    "limit": {
+      "type": "integer",
+      "default": 8
+    },
+    "linkText": {
+      "type": "string"
+    },
+    "linkUrl": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
