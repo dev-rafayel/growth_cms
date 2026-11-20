@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_layout_headers",
+  "info": {
+    "displayName": "Header",
+    "icon": "layout"
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "navLinks": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": true
+    },
+    "searchPlaceholder": {
+      "type": "string",
+      "default": "Search watches, art, sneakers, lot number…"
+    },
+    "signInLink": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": false
+    },
+    "joinLink": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

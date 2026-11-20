@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_layout_announcement_bars",
+  "info": {
+    "displayName": "Announcement bar",
+    "icon": "bell"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true
+    },
+    "isLive": {
+      "type": "boolean",
+      "default": false
+    },
+    "link": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

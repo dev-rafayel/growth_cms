@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_layout_footers",
+  "info": {
+    "displayName": "Footer",
+    "icon": "layout"
+  },
+  "options": {},
+  "attributes": {
+    "newsletterLabel": {
+      "type": "string",
+      "default": "Closing-soon alerts, once a week."
+    },
+    "newsletterPlaceholder": {
+      "type": "string",
+      "default": "you@email.com"
+    },
+    "newsletterButton": {
+      "type": "string",
+      "default": "Subscribe"
+    },
+    "columns": {
+      "type": "component",
+      "component": "layout.footer-column",
+      "repeatable": true
+    },
+    "copyright": {
+      "type": "string"
+    },
+    "legalLinks": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}
