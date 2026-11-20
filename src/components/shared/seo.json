@@ -1,22 +1,19 @@
 {
   "collectionName": "components_shared_seos",
   "info": {
-    "name": "Seo",
-    "icon": "allergies",
     "displayName": "Seo",
-    "description": ""
+    "description": "Search engine and social sharing settings"
   },
   "options": {},
   "attributes": {
     "metaTitle": {
       "type": "string",
-      "minLength": 20,
       "maxLength": 60,
       "required": true
     },
     "metaDescription": {
       "type": "text",
-      "minLength": 70,
+      "minLength": 50,
       "maxLength": 160,
       "required": true
     },
@@ -24,9 +21,19 @@
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": [
-        "images"
-      ]
+      "allowedTypes": ["images"]
+    },
+    "canonicalURL": {
+      "type": "string",
+      "regex": "^https?:\\/\\/\\S+$"
+    },
+    "noIndex": {
+      "type": "boolean",
+      "default": false
+    },
+    "noFollow": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

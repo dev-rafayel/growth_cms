@@ -1,45 +1,46 @@
 {
-    "collectionName": "auction-card",
-    "info": {
-        "displayName": "Auction Card"
+  "collectionName": "components_landing_page_auction_cards",
+  "info": {
+    "displayName": "Auction Card"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
     },
-    "options": {},
-    "attributes": {
-        "title": {
-            "type": "string",
-            "required": true
-        },
-        "image": {
-            "type": "media",
-            "multiple": false,
-            "required": true,
-            "allowedTypes": [
-                "images"
-            ]
-        },
-        "source": {
-            "type": "enumeration",
-            "required": true,
-            "enum": [
-                "ending_soon",
-                "newest"
-            ]
-        },
-        "auctionDate": {
-            "type": "string",
-            "required": true
-        },
-        "category": {
-            "type": "string",
-            "required": true
-        },
-        "auctionUrl": {
-            "type": "string",
-            "required": true,
-            "regex": "^(\\/|https?:\\/\\/)\\S*$"  
-        },
-        "price": {
-            "type": "string"
-        }
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "category": {
+      "type": "string",
+      "required": true
+    },
+    "auctionUrl": {
+      "type": "string",
+      "required": true,
+      "regex": "^(\\/|https?:\\/\\/)\\S*$"
+    },
+    "price": {
+      "type": "string",
+      "min": 0,
+      "required": true
+    },
+    "bidCount": {
+      "type": "string",
+      "min": 0
+    },
+    "endsAt": {
+      "type": "string"
+    },
+    "listedAt": {
+      "type": "string"
     }
+  },
+  "config": {}
 }
