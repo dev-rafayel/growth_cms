@@ -9,6 +9,15 @@
       "type": "string",
       "required": true
     },
+    "source": {
+      "type": "enumeration",
+      "enum": [
+        "ending_soon",
+        "newest"
+      ],
+      "default": "ending_soon",
+      "required": true
+    },
     "linkText": {
       "type": "string"
     },
@@ -21,7 +30,8 @@
       "component": "landing-page.auction-card",
       "repeatable": true,
       "min": 1,
-      "max": 12
+      "max": 12,
+      "required": true
     }
   },
   "config": {}

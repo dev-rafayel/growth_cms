@@ -29,6 +29,7 @@
         "landing-page.cta-band",
         "landing-page.faq"
       ],
+      "required": true,
       "min": 1
     },
     "seo": {
