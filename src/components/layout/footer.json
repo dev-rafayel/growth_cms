@@ -1,8 +1,7 @@
 {
   "collectionName": "components_layout_footers",
   "info": {
-    "displayName": "Footer",
-    "icon": "layout"
+    "displayName": "Footer"
   },
   "options": {},
   "attributes": {

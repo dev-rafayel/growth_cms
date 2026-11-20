@@ -9,18 +9,19 @@
       "type": "string",
       "required": true
     },
-    "limit": {
-      "type": "integer",
-      "default": 8,
-      "min": 4,
-      "max": 12
-    },
     "linkText": {
       "type": "string"
     },
     "linkUrl": {
       "type": "string",
       "regex": "^(\\/|https?:\\/\\/)\\S*$"
+    },
+    "items": {
+      "type": "component",
+      "component": "landing-page.auction-card",
+      "repeatable": true,
+      "min": 1,
+      "max": 12
     }
   },
   "config": {}
