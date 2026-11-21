@@ -1,8 +1,7 @@
 {
   "collectionName": "components_layout_announcement_bars",
   "info": {
-    "displayName": "Announcement bar",
-    "icon": "bell"
+    "displayName": "Announcement bar"
   },
   "options": {},
   "attributes": {

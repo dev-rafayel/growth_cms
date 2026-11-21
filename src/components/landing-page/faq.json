@@ -14,7 +14,8 @@
       "component": "landing-page.faq-item",
       "repeatable": true,
       "min": 1,
-      "max": 12
+      "max": 12,
+      "required": true
     }
   },
   "config": {}

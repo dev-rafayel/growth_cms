@@ -1,8 +1,7 @@
 {
   "collectionName": "components_layout_footer_columns",
   "info": {
-    "displayName": "Footer column",
-    "icon": "bulletList"
+    "displayName": "Footer column"
   },
   "options": {},
   "attributes": {

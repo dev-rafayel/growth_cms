@@ -1,5 +1,5 @@
 {
-  "collectionName": "auction-card",
+  "collectionName": "components_landing_page_auction_cards",
   "info": {
     "displayName": "Auction Card"
   },
@@ -39,7 +39,20 @@
       "regex": "^(\\/|https?:\\/\\/)\\S*$"
     },
     "price": {
+      "type": "string",
+      "min": 0,
+      "required": true
+    },
+    "bidCount": {
+      "type": "string",
+      "min": 0
+    },
+    "endsAt": {
+      "type": "string"
+    },
+    "listedAt": {
       "type": "string"
     }
-  }
+  },
+  "config": {}
 }

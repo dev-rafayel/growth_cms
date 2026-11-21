@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_landing_page_category_cards",
+  "info": {
+    "displayName": "Category Card"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "maxLength": 60
+    },
+    "categoryUrl": {
+      "type": "string",
+      "required": true,
+      "regex": "^(\\/|https?:\\/\\/)\\S*$"
+    }
+  },
+  "config": {}
+}
