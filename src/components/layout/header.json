@@ -5,6 +5,10 @@
   },
   "options": {},
   "attributes": {
+    "siteName": {
+      "type":"string",
+      "repetable": false
+    },
     "logo": {
       "type": "media",
       "multiple": false,
