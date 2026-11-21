@@ -17,18 +17,6 @@
         "images"
       ]
     },
-    "source": {
-      "type": "enumeration",
-      "required": true,
-      "enum": [
-        "ending_soon",
-        "newest"
-      ]
-    },
-    "auctionDate": {
-      "type": "string",
-      "required": true
-    },
     "category": {
       "type": "string",
       "required": true
@@ -39,19 +27,19 @@
       "regex": "^(\\/|https?:\\/\\/)\\S*$"
     },
     "price": {
-      "type": "string",
+      "type": "decimal",
       "min": 0,
       "required": true
     },
     "bidCount": {
-      "type": "string",
+      "type": "integer",
       "min": 0
     },
     "endsAt": {
-      "type": "string"
+      "type": "datetime"
     },
     "listedAt": {
-      "type": "string"
+      "type": "datetime"
     }
   },
   "config": {}
