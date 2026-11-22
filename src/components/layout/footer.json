@@ -23,7 +23,9 @@
       "repeatable": true
     },
     "copyright": {
-      "type": "string"
+      "type": "string",
+      "required": true,
+      "default": "© {year} BidNow"
     },
     "legalLinks": {
       "type": "component",
