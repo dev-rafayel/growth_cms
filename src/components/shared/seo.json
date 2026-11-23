@@ -17,6 +17,10 @@
       "maxLength": 160,
       "required": true
     },
+    "keywords": {
+      "type": "string",
+      "maxLength": 255
+    },
     "shareImage": {
       "type": "media",
       "multiple": false,
