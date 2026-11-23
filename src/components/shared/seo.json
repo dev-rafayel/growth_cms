@@ -17,6 +17,18 @@
       "maxLength": 160,
       "required": true
     },
+    "keywords": {
+      "type": "string",
+      "maxLength": 255
+    },
+    "ogTitle": {
+      "type": "string",
+      "maxLength": 90
+    },
+    "ogDescription": {
+      "type": "text",
+      "maxLength": 200
+    },
     "shareImage": {
       "type": "media",
       "multiple": false,
