@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_landing_page_how_to_steps",
+  "info": {
+    "displayName": "How To Step"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  },
+  "config": {}
+}

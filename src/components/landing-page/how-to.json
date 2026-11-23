@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_landing_page_how_tos",
+  "info": {
+    "displayName": "How To",
+    "description": "Numbered step-by-step guide"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "steps": {
+      "type": "component",
+      "component": "landing-page.how-to-step",
+      "repeatable": true,
+      "required": true
+    }
+  },
+  "config": {}
+}
