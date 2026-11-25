@@ -21,7 +21,8 @@
         "accent",
         "dark",
         "outline",
-        "text"
+        "text",
+        "navy"
       ],
       "default": "accent"
     },
