@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_layout_nav_dropdowns",
+  "info": {
+    "displayName": "Nav dropdown",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "regex": "^(\\/|https?:\\/\\/|#)\\S*$"
+    },
+    "links": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}
