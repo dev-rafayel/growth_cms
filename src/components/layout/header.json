@@ -16,6 +16,11 @@
         "images"
       ]
     },
+    "auctionMenu": {
+      "type": "component",
+      "component": "layout.nav-dropdown",
+      "repeatable": false
+    },
     "navLinks": {
       "type": "component",
       "component": "shared.link",

@@ -13,14 +13,10 @@
       "type": "text",
       "required": true
     },
-    "buttonText": {
-      "type": "string",
-      "required": true
-    },
-    "buttonUrl": {
-      "type": "string",
-      "required": true,
-      "regex": "^(\\/|https?:\\/\\/)\\S*$"
+    "link": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": false
     }
   },
   "config": {}
