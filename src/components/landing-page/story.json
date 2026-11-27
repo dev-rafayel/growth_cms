@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_landing_page_stories",
+  "info": {
+    "displayName": "Story",
+    "description": "Story section with copy and a large image"
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "imageCaption": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}
