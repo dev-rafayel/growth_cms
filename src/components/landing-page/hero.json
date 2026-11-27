@@ -26,6 +26,13 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "mobileBackground": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }
