@@ -28,7 +28,8 @@
         "landing-page.category-grid",
         "landing-page.cta-band",
         "landing-page.faq",
-        "landing-page.how-to"
+        "landing-page.how-to",
+        "landing-page.story"
       ],
       "required": true,
       "min": 1
