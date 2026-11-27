@@ -1,20 +1,24 @@
 {
   "collectionName": "components_landing_page_testimonials",
   "info": {
-    "displayName": "Testimonial"
+    "displayName": "Testimonial",
+    "description": "Heading plus a row of review cards"
   },
   "options": {},
   "attributes": {
-    "quote": {
-      "type": "text",
-      "required": true
-    },
-    "author": {
+    "title": {
       "type": "string",
       "required": true
     },
-    "role": {
-      "type": "string"
+    "description": {
+      "type": "text"
+    },
+    "items": {
+      "type": "component",
+      "component": "landing-page.testimonial-item",
+      "repeatable": true,
+      "required": true,
+      "min": 1
     }
   },
   "config": {}
